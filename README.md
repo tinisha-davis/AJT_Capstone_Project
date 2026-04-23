@@ -80,7 +80,7 @@ AJT_Capstone_Project/
     * Replace "your-username" with your github username
 
 2. Navigate to the Project in your files
-    * `cd "..."/AJT_Capstone_Project
+    * `cd "..."/AJT_Capstone_Project`
     * Replace "..." with your filepath
 
 2. Navigate to the project directory 
@@ -104,24 +104,3 @@ AJT_Capstone_Project/
 2. Run the frontend
     * `npm run dev`
     * Vite will start running at something like http://localhost:5173
-
-## API Overview
-The backend supports full CRUD operations for merchandise products, stored in `data.json`. These routes support browsing, adding, updating, and removing items from the NSC Swag Store catalog. 
-* Products
-    * **GET/products**: Retrieve all merchandise items (hoodies, shirts, accessories, etc).
-    * **POST/products**: Create a new product entry. Used for adding new apparel or accessories to the store. 
-    * **GET/products/:productId**: Retrieve a single product by ID
-    * **PATCH/products/:productId**: Update part of a product (price, name, description, inventory)
-    * **PUT/products/:productId**: Replace an entire product object.
-    * **DELETE/products/:productId**: Remove a product from the catalog.
-    * **POST/products/:productId/variants**: Add a new variant (size, color, etc).
-    * **GET/products/:productId/variants**: Get all variants for a product.
-    * **GET/products/:productId/variants/variantId**: Get a specific variant
-    * **PATCH/products/:productId/variants/variantId**: Update a variant (inventory count).
-    * **DELETE/products/:productId/variants/variantId**: Remove a variant
-
-## Future Enhancements
-* Payment integration
-* Admin dashboard for managing inventory
-* Secure login & user accounts
-* Database migration (MongoDB, PostgreSQL, etc)
